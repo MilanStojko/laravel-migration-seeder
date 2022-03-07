@@ -19,7 +19,8 @@ class TravelsTableSeeder extends Seeder
             $newTravel->location = $faker->word();
             $newTravel->hotel = $faker->word();
             $newTravel->date = $faker->date();
-            $newTravel->prize = $faker->randomNumber(5, true);
+            $newTravel->price = $faker->randomDigit();
+            $newTravel->save();
         }
     }
 }
